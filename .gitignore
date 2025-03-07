@@ -58,3 +58,6 @@ docs/_build/
 # PyBuilder
 target/
 
+# Ignore new N-MNIST
+notebooks/data/
+
