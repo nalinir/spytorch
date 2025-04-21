@@ -1,0 +1,118 @@
+__doc__:
+    value: |
+        Config object.
+
+        Config objects are intended to hold all of the hyperparameters associated
+        with a wandb run and are saved with the run object when `wandb.init` is
+        called.
+
+        We recommend setting the config once when initializing your run by passing
+        the `config` parameter to `init`:
+
+        ```
+        wandb.init(config=my_config_dict)
+        ```
+
+        You can create a file called `config-defaults.yaml`, and it will
+        automatically be loaded as each run's config. You can also pass the name
+        of the file as the `config` parameter to `init`:
+
+        ```
+        wandb.init(config="my_config.yaml")
+        ```
+
+        See https://docs.wandb.com/guides/track/config#file-based-configs.
+
+        Examples:
+            Basic usage
+            ```
+            with wandb.init(config={"epochs": 4}) as run:
+                for x in range(run.config.epochs):
+                    # train
+            ```
+
+            Nested values
+            ```
+            with wandb.init(config={"train": {"epochs": 4}}) as run:
+                for x in range(run.config["train"]["epochs"]):
+                    # train
+            ```
+
+            Using absl flags
+            ```
+            flags.DEFINE_string("model", None, "model to run")  # name, default, help
+            with wandb.init() as run:
+                run.config.update(flags.FLAGS)  # adds all absl flags to config
+            ```
+
+            Argparse flags
+            ```python
+            with wandb.init(config={"epochs": 4}) as run:
+                parser = argparse.ArgumentParser()
+                parser.add_argument(
+                    "-b",
+                    "--batch-size",
+                    type=int,
+                    default=8,
+                    metavar="N",
+                    help="input batch size for training (default: 8)",
+                )
+                args = parser.parse_args()
+                run.config.update(args)
+            ```
+
+            Using TensorFlow flags (deprecated in tensorflow v2)
+            ```python
+            flags = tf.app.flags
+            flags.DEFINE_string("data_dir", "/tmp/data")
+            flags.DEFINE_integer("batch_size", 128, "Batch size.")
+
+            with wandb.init() as run:
+                run.config.update(flags.FLAGS)
+            ```
+_name:
+    value: wandb.config
+_wandb:
+    value:
+        cli_version: 0.19.9
+        m: []
+        python_version: 3.13.2
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+                - 55
+            "2":
+                - 1
+                - 5
+                - 53
+                - 55
+            "3":
+                - 2
+                - 14
+                - 16
+                - 17
+                - 23
+                - 55
+            "4": 3.13.2
+            "5": 0.19.9
+            "8":
+                - 1
+                - 5
+            "12": 0.19.9
+            "13": darwin-arm64
+epochs:
+    value: 150
+l1:
+    value: 1e-06
+l2:
+    value: 1e-06
+learning_rate:
+    value: 0.002
+model_name:
+    value: SNN
+optimizer:
+    value: Adam
+regularization:
+    value: true

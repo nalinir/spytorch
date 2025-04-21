@@ -1,0 +1,1 @@
+{"epoch":149,"val_accuracy":0.73828125,"_timestamp":1.744868693804554e+09,"_wandb":{"runtime":134},"train_loss":0.5872989296913147,"spike_count_val_epoch":143,"final_train_accuracy":0.765625,"val_loss":0.5776681303977966,"_runtime":134.737149,"_step":300,"final_test_accuracy":0.75390625,"final_val_accuracy":0.73828125,"spike_count_train_epoch":0}

@@ -1,0 +1,16 @@
+wandb_version: 1
+
+epochs:
+  value: 150
+l1:
+  value: 5.0e-06
+l2:
+  value: 1.0e-06
+learning_rate:
+  value: 0.002
+model_name:
+  value: Hybrid_RNN
+optimizer:
+  value: Adam
+regularization:
+  value: true

@@ -1,0 +1,44 @@
+{
+  "os":  "macOS-15.3.1-arm64-arm-64bit-Mach-O",
+  "python":  "CPython 3.13.2",
+  "startedAt":  "2025-04-17T15:12:29.791677Z",
+  "program":  "/Users/naliniramanathan/projects/snn_project/spytorch/notebooks/HU_implementation_buildup_BEST_MODULAR_wandb.ipynb",
+  "codePath":  "notebooks/HU_implementation_buildup_BEST_MODULAR_wandb.ipynb",
+  "git":  {
+    "remote":  "https://github.com/nalinir/spytorch",
+    "commit":  "259afeabdf5935a724d29b2a2ec0f80143547b17"
+  },
+  "email":  "nar8991@nyu.edu",
+  "root":  "/Users/naliniramanathan/projects/snn_project/spytorch/notebooks",
+  "host":  "10-18-217-234.dynapool.wireless.nyu.edu",
+  "executable":  "/opt/anaconda3/envs/snn_hybrid/bin/python",
+  "codePathLocal":  "HU_implementation_buildup_BEST_MODULAR_wandb.ipynb",
+  "cpu_count":  10,
+  "cpu_count_logical":  10,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "226724515840"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "494384795648",
+      "used":  "226724515840"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "cpu":  {
+    "count":  10,
+    "countLogical":  10
+  },
+  "apple":  {
+    "name":  "Apple M1 Pro",
+    "ecpuCores":  2,
+    "pcpuCores":  8,
+    "gpuCores":  16,
+    "memoryGb":  16,
+    "swapTotalBytes":  "13958643712",
+    "ramTotalBytes":  "17179869184"
+  }
+}

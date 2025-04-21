@@ -1,0 +1,16 @@
+{
+  "os":  "macOS-15.3.1-arm64-arm-64bit-Mach-O",
+  "python":  "CPython 3.13.2",
+  "startedAt":  "2025-04-16T04:01:15.246562Z",
+  "program":  "/Users/naliniramanathan/projects/snn_project/spytorch/notebooks/HU_implementation_buildup_BEST_MODULAR_wandb.ipynb",
+  "codePath":  "notebooks/HU_implementation_buildup_BEST_MODULAR_wandb.ipynb",
+  "git":  {
+    "remote":  "https://github.com/nalinir/spytorch",
+    "commit":  "259afeabdf5935a724d29b2a2ec0f80143547b17"
+  },
+  "email":  "nar8991@nyu.edu",
+  "root":  "/Users/naliniramanathan/projects/snn_project/spytorch/notebooks",
+  "host":  "Nalinis-Laptop.local",
+  "executable":  "/opt/anaconda3/envs/snn_hybrid/bin/python",
+  "codePathLocal":  "HU_implementation_buildup_BEST_MODULAR_wandb.ipynb"
+}
